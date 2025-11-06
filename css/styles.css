@@ -3,7 +3,7 @@
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: monospace;
 }
 
 .container {
@@ -31,7 +31,7 @@ body {
   gap: 0.5rem;
 }
 .container form fieldset legend {
-  font-weight: 700;
+  font-weight: 400;
 }
 .container form fieldset label {
   display: flex;
@@ -50,6 +50,53 @@ body {
 .container form fieldset.form__btns button {
   flex: 1;
   padding: 0.25rem;
+}
+
+#employees {
+  flex: 1;
+  max-width: 50%;
+  overflow-x: auto;
+}
+#employees table {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+#employees table thead th {
+  background-color: #f4f4f4;
+  padding: 15px 12px;
+  text-align: left;
+  font-weight: 600;
+}
+#employees table thead th:first-child {
+  width: 70px;
+  text-align: center;
+}
+#employees table thead th:last-child {
+  width: 120px;
+  text-align: center;
+}
+#employees table tbody td {
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+  vertical-align: middle;
+  word-wrap: break-word;
+}
+#employees table tbody td:first-child {
+  width: 70px;
+  text-align: center;
+}
+#employees table tbody td:last-child {
+  width: 120px;
+  text-align: center;
+}
+#employees img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 4px;
+  display: block;
+  margin: 0 auto;
 }
 
 /*# sourceMappingURL=styles.css.map */
